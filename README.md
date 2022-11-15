@@ -1,7 +1,7 @@
-- NOM : 
-- PRÉNOM :
+- NOM : Wali
+- PRÉNOM :Youssef
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :https://www.figma.com/file/4UUBrueD3kRbhlbOGuPYAL/Maquettes-projet-individuel-%E2%80%94-youssef-WALI?node-id=0%3A1&t=Ab42JQ9OquLkx793-1
 
 # Structure de départ pour le projet individuel.
 
