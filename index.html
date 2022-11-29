@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" : class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La guerre</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #433232;
+            display: grid;
+            place-content: center;
+        }
+
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+
+        .noscroll,
+        .noscroll body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="/public/icon/image-removebg-preview 2.webp" alt="#"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menu"><img
+                src="/public/icon/menu .webp" alt="#"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <a href="./index.html"><img src="/public/icon/marque-de-croix-removebg-preview 1.webp" alt="#"></a>
+            </ul>
+            <ul>
+                <h1>Menu</h1>
+            </ul>
+            <ul>
+                <li><a href="/musique.html">Une musique interessante</a></li>
+                <li><a href="/livre.html">La Chronologie de la guerre </a></li>
+                <li><a href="">La Série qui résume tout</a></li>
+                <li><a href="">le lieu le plus inégalitaire du monde</a></li>
+                <li><a href="">Un grand Espoirs de ce monde</a></li>
+                <li><a href="">Un Regret de cette génération</a></li>
+                <li><a href="">Autres Projets</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Glossaire</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    </head>
+
+    <body>
+        <h1>La guerre</h1>
+
+        <img src="./public/img/page-d-accueil/photo guerre.webp" alt="photo de la guerre">
+        <img src="./public/img/page-d-accueil/date.webp" alt="image de la date de la guerre">
+
+        <h2>INTRODUCTION</h2>
+        <p class="intro">Les guerres , des moments marquant dans l’histoire du monde , des moments joyeux mais souvent
+            triste , des mort , des bléssé , des familles endeuillés et les villes et pays détruits . Nous avons une
+            pensé
+            pour toutes les personnes qui ont vécu la guerre et on éspere qu’il n’y aura plus jamais de guerre , nous
+            éspérons un monde de paix et de bohneur . </p>
+
+        <p>Livre ( Chronologie de la seconde guerrmondiale ) :
+            un livre explixant tous ce qui c’est passé pendant la seconde guerre mondiale , avec les dates et contenu
+            les
+            plus
+            important .
+
+            <img src="./public/img/page-d-accueil/frise.webp" alt="frise sur la seconde guerre mondiale">
+
+            EN SAVOIR PLUS
+        </p>
+
+        <p>Film (LA RUSE) : Un film qui est accès sur l’opération qui a couté la défaite a l’allemagne .
+
+            <img src="/public/img/page-d-accueil/operation.webp" alt=" image de l'operation">
+
+            EN SAVOIR PLUS
+
+        <p>Chanson ( Le chant des partisant) : L’hymne de la résistance , La chanson pour faire tenir les francais
+            pendant
+            l’occupation .
+
+            <img src="/public/img/page-d-accueil/resistance.webp" alt="photo de résistant de la  guerre">
+
+            EN SAVOIR PLUS
+        </p>
+
+
+
+        <p>Lieu ( Europe ) : L’europe qui a était le théatre des combats , avec les bataille , les mort et les bléssés .
+
+            <img src="/public/img/page-d-accueil/lieu.webp" alt="carte de l'europe">
+
+            EN SAVOIR PLUS
+        </p>
+
+
+        <p>Espoir (Arret des guerre ) : La seconde guerre mondiale devait etre la derniere mais 4 ans après et
+            aujourd’hi
+            les
+            guerre sont toujours d’actualité .
+
+            <img src="/public/img/page-d-accueil/stopguerre.webp" alt="image pour l'arret des guerre">
+
+            EN SAVOIR PLUS
+        </p>
+
+        <p>Regret ( La guerre) : La guerre , sa ne devrait pas exister , sa était crée par l’Homme est cela est triste .
+
+            <img src="/public/img/page-d-accueil/prqguerre.webp" alt="pourquoi la guerre ">
+
+            EN SAVOIR PLUS
+        </p>
+        <footer>
+            <p>Wali Youssef - MMI 1 - C2</p>
+            <p>Mon mail personel : </p>
+            <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBmlwHvCNcpmhfwGFGbvMdChQDfCkjqlLCqNGsztjrKLhSdLsJZhPGbbNptnjpQZddhsXWT"
+                target="_blank">
+                youyouwalicm@gmail.com</a>
+            <p>“projet réalisé dans le cadre d’un exercice
+                pédagogique au
+                <a href="http://mmimontbeliard.com/" target="_blank">département MMi de Montbéliard</a>"
+            </p>
+
+            <p>Université Nord Franche-Comté</p>
+        </footer>
+    </body>
+
+</html>
