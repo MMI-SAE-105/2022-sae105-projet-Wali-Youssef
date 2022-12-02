@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen:false}" : class="{noscroll:menuIsOpen,}">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La guerre</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #433232;
+            display: grid;
+            place-content: center;
+        }
+
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+
+        .noscroll,
+        .noscroll body {
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <a href="./index.html"><img src="/public/icon/image-removebg-preview 2.webp" alt="#"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menu"><img
+                src="/public/icon/menu .webp" alt="#"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <a href="./index.html"><img src="/public/icon/marque-de-croix-removebg-preview 1.webp" alt="#"></a>
+            </ul>
+            <ul>
+                <h1>Menu</h1>
+            </ul>
+            <ul>
+                <li><a href="/musique.html">Une musique interessante</a></li>
+                <li><a href="/livre.html">La Chronologie de la guerre </a></li>
+                <li><a href="">La Série qui résume tout</a></li>
+                <li><a href="">le lieu le plus inégalitaire du monde</a></li>
+                <li><a href="">Un grand Espoirs de ce monde</a></li>
+                <li><a href="">Un Regret de cette génération</a></li>
+                <li><a href="">Autres Projets</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Glossaire</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    </head>
+
+
     
+
 </body>
 </html>

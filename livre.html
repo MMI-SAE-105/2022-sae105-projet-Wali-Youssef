@@ -1,12 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen:false}" : class="{noscroll:menuIsOpen,}">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La guerre</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+    <style>
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #433232;
+            display: grid;
+            place-content: center;
+        }
+
+        .header_menuBtn {
+            position: relative;
+            z-index: 10;
+        }
+
+        .noscroll,
+        .noscroll body {
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <a href="./index.html"><img src="/public/icon/image-removebg-preview 2.webp" alt="#"></a>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menu"><img
+                src="/public/icon/menu .webp" alt="#"></button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <a href="./index.html"><img src="/public/icon/marque-de-croix-removebg-preview 1.webp" alt="#"></a>
+            </ul>
+            <ul>
+                <h1>Menu</h1>
+            </ul>
+            <ul>
+                <li><a href="/musique.html">Une musique interessante</a></li>
+                <li><a href="/livre.html">La Chronologie de la guerre </a></li>
+                <li><a href="">La Série qui résume tout</a></li>
+                <li><a href="">le lieu le plus inégalitaire du monde</a></li>
+                <li><a href="">Un grand Espoirs de ce monde</a></li>
+                <li><a href="">Un Regret de cette génération</a></li>
+                <li><a href="">Autres Projets</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Glossaire</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    </head>
+
+    <body>
+
+        <h1>Livre</h1>
+
+        <h2>Chronologie de la seconde guerre mondiale</h2>
+        <img src="/public/img/livre/livre.webp" alt="image du livre">
+
+        <h3>Introduction</h3>
+
+        <p class="intro">Ce livre s’intitule Chronologie de la seconde guerre mondiale, il a été écrit par Bernard Phan
+            enseignant en classe
+            préparatoire. Le livre parle de l’histoire de la guerre et de ses dates importantes.
+        </p>
+
+        <h4>rappel</h4>
+
+        <p> Après la première guerre mondiale, en 1919 tout le monde aurait cru que ce serait la dernière mais à peine
+            une
+            génération après la signature du traité de Versailles, le continent européen était à nouveau plongé dans la
+            guerre. La
+            seconde guerre mondiale une guerre difficile qui toucha tous les sols sauf le continent américain qui
+            échappa
+            complètement aux combats. Des troupes furent levée partout dans le monde pour combattre. Pendant la deuxième
+            guerre
+            mondiale il y a 2 clans : les ennemis donc l’axe dont les principaux partenaires sont l'Allemagne, l'Italie
+            et le japon
+            et les alliés la France, l’union soviétique, les États-Unis et L'Angleterre. L’axe avait un sentiment de
+            supériorité
+            raciale, ils voulaient aussi conquérir le plus de pays possible et ils étaient contre la religions juive, et
+            donc ils
+            vont procéder à l’extinction de la population juive.
+        </p>
+
+        <h4>Histoire</h4>
+
+        <p>En Europe, l'évènement déclencheur de la Seconde Guerre mondiale a lieu le 1er septembre 1939 avec l'invasion
+            de la
+            Pologne par l'Allemagne. L'Allemagne riposte à une prétendue attaque polonaise, simulé par les soldats du
+            troisième
+            Reich alors la mobilisation générale est décrétée en France. Le jour suivant, le 3 septembre 1939 la
+            Grande-Bretagne et
+            la France déclare la guerre au troisième Reich. En avril 1940 la Norvège et le Danemark sont envahis par les
+            Allemands
+            puis La France se fait envahir à son tour par l'Allemagne qui a contourné la ligne Maginot le 10 mai 1940.
+            Le 18 juin
+            1940 le général de gaulle appelle les Français à résister à la radio à Londres mais le 22 juin 1940
+            l’armistice
+            franco-allemande est signé par Pétain. Le gouvernement s’installe à Vichy. La France est divisée en 2, le
+            nord occupé
+            par les Allemands et le sud par le gouvernement du maréchal Pétain.
+        </p>
+
+        <img src="/public/img/livre/debarquement.webp" alt="photo du débarquement en normandie">
+
+        <p>débarquement en Normandie</p>
+
+        <p>
+            En 1942 L'Europe est entièrement sous le contrôle des nazis, Les nazis ont leur police, la gestapo, ils
+            déportent les
+            juifs et les opposant. Concernant le génocide juif, l’objectif de l'Allemagne nazie durant la guerre a était
+            d’exterminer cette population par le biais de la solution finale, la shoah donc les juifs sont envoyés dans
+            des camps
+            d’exterminations.EN 1942 alors que l'Allemagne nazie et a sont apposé la bataille de Stalingrad sera la
+            bataille de trop, après plusieurs
+            mois de combat Hitler capitule. A partir de ce moment la guerre est en faveur des alliés. Le 6 juin 1944 il
+            y a le
+            débarquement en Normandie des forces américaines. Le but est de libérer la France. Puis le 25 aout 1944
+            paris est libéré
+            et les soviétique repoussent les Allemands de la Pologne.Pour finir Hitler se suicide, les Allemands
+            capitulent et les Américains lancent une bombe nucléaire à Hiroshima et
+            nagasaki pour se venger puis le japon capitule. Le 26 juin 1946 l’organisation des Nations Unies est créée.
+
+        </p>
+
+        <h4>La mort </h4>
+
+    <p>
+        Pour conclure la seconde guerre mondiale est le conflit le plus meurtrier de l’histoire avec plus de 60 millions de mort
+        dont la plupart sont des civils, cette guerre sera marquée à jamais dans notre cœur.
+    </p>
+
+<footer>
+    <p>Wali Youssef - MMI 1 - C2</p>
+    <p>Mon mail personel : </p>
+    <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBmlwHvCNcpmhfwGFGbvMdChQDfCkjqlLCqNGsztjrKLhSdLsJZhPGbbNptnjpQZddhsXWT"
+        target="_blank">
+        youyouwalicm@gmail.com</a>
+    <p>“projet réalisé dans le cadre d’un exercice
+        pédagogique au
+        <a href="http://mmimontbeliard.com/" target="_blank">département MMi de Montbéliard</a>"
+    </p>
+
+    <p>Université Nord Franche-Comté</p>
+</footer>
+
+
+
+    </body>
     
-</body>
+
 </html>
