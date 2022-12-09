@@ -2,6 +2,7 @@ body{
     background-color: rgb(137, 95, 102);
     color: aliceblue;
     margin: 0;
+    
 
 }
 
@@ -10,5 +11,7 @@ img{
     height: auto;
     border-style: none;
     margin: auto;
+   
 }
+
 
