@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/src/style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+   <style>
         .menu {
             position: fixed;
             top: 0;
@@ -36,8 +38,10 @@
         <a href="./index.html">
             <img class="logo" src="/public/icon/image-removebg-preview 2.webp" alt="logo site">
         </a>
+        
+        <h1 class="Laguerre">LA guerre</h1>
         <button @click="menuIsOpen = ! menuIsOpen">
-            <img aria-controls="mainNav"  class="header_menu" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAdUlEQVRoge3WQQqAIBhE4bFz1IHyHtGtE4LOMa2CcGeIGrxv525+V08CAKAS29F28viS7fjeHrJDTklL09/77gohzM9j6rmkpvyQXVLqMaRQkrT1HgEAAFDC9up/ZPxhMn5wZDwAAEAjJuO7IONHQsYDAKq6AZckH7oObgowAAAAAElFTkSuQmCC" alt="btn menu">
+            <img aria-controls="mainNav"  class="header_menu" src="./public/icon/menu.jpg.webp" alt="btn menu">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
 
@@ -69,15 +73,14 @@
                   
         </nav>
     
- <body>   
-<h1>LA guerre</h1>
-<body>
+   
+
 
 </header>
 </head>
 
 </body>
-        <img src="./public/img/page-d-accueil/photo guerre.webp" alt="photo de la guerre">
+        <img class="guerre1" src="./public/img/page-d-accueil/photo guerre.webp" alt="photo de la guerre">
         <img src="./public/img/page-d-accueil/date.webp" alt="image de la date de la guerre">
 
         <h2>INTRODUCTION</h2>
@@ -87,21 +90,23 @@
             pour toutes les personnes qui ont vécu la guerre et on éspere qu’il n’y aura plus jamais de guerre , nous
             éspérons un monde de paix et de bohneur . </p>
 
-        <p>Livre ( Chronologie de la seconde guerrmondiale ) :
-            un livre explixant tous ce qui c’est passé pendant la seconde guerre mondiale , avec les dates et contenu
-            les
-            plus
-            important .
-        </p>
+       
+             
+            <img class="imgacceuil" src="./public/img/page-d-accueil/frise.webp" alt="frise sur la seconde guerre mondiale">
 
-                <img src="./public/img/page-d-accueil/frise.webp" alt="frise sur la seconde guerre mondiale">
+            <p class="livre">Livre ( Chronologie de la seconde guerrmondiale ) :
+                un livre explixant tous ce qui c’est passé pendant la seconde guerre mondiale , avec les dates et contenu
+                les
+                plus
+                important .
+            </p>
+    
+            <a href="/livre.html"><button>EN SAVOIR PLUS </button></a>
 
-        <a href="/livre.html"><button>EN SAVOIR PLUS </button></a>
 
+        <p class="film"> Film (LA RUSE) : Un film qui est accès sur l’opération qui a couté la défaite a l’allemagne .
 
-        <p>Film (LA RUSE) : Un film qui est accès sur l’opération qui a couté la défaite a l’allemagne .
-
-            <img src="/public/img/page-d-accueil/operation.webp" alt=" image de l'operation">
+            <img class="imgacceuil" src= "/public/img/page-d-accueil/operation.webp" alt=" image de l'operation">
 
             <a href="/film.html"><button>EN SAVOIR PLUS </button></a>
 
@@ -109,7 +114,7 @@
             pendant
             l’occupation .
 
-            <img src="/public/img/page-d-accueil/resistance.webp" alt="photo de résistant de la  guerre">
+            <img class="imgacceuil" src="/public/img/page-d-accueil/resistance.webp" alt="photo de résistant de la  guerre">
 
             <a href="/musique.html"><button>EN SAVOIR PLUS </button></a>
 
@@ -118,7 +123,7 @@
 
         <p>Lieu ( Europe ) : L’europe qui a était le théatre des combats , avec les bataille , les mort et les bléssés .
 
-            <img src="/public/img/page-d-accueil/lieu.webp" alt="carte de l'europe">
+            <img class="imgacceuil" src="/public/img/page-d-accueil/lieu.webp" alt="carte de l'europe">
 
             <a href="/lieu.html"><button>EN SAVOIR PLUS </button></a>
 
@@ -130,14 +135,14 @@
             les
             guerre sont toujours d’actualité .
 
-            <img src="/public/img/page-d-accueil/stopguerre.webp" alt="image pour l'arret des guerre">
+            <img class="imgacceuil"src="/public/img/page-d-accueil/stopguerre.webp" alt="image pour l'arret des guerre">
 
             <a href="/espoir.html"><button>EN SAVOIR PLUS </button></a>
         </p>
 
         <p>Regret ( La guerre) : La guerre , sa ne devrait pas exister , sa était crée par l’Homme est cela est triste .
 
-            <img src="/public/img/page-d-accueil/prqguerre.webp" alt="pourquoi la guerre ">
+            <img class="imgacceuil" src="/public/img/page-d-accueil/prqguerre.webp" alt="pourquoi la guerre ">
 
             <a href="/regret.html"><button>EN SAVOIR PLUS </button></a>
         </p>
