@@ -29,10 +29,9 @@ a {
     color: black;
 }
 
-.guerre1{  
 
 
-}
+
 
 .intro { 
     padding:0px 10%;
@@ -57,9 +56,32 @@ a {
     padding: 10px ;
     border-radius: 10px;
     position: relative;
+    align-items: center;
+    align-content: center;
+    
+    
 }
 
 .imgacceuil1 {
     position: relative;
-    top: ;
+    top: 100;
+    width: 80%;
+   margin: 20px;
+   border-radius: 10px;
+
+    
 }
+.livree {
+
+text-align: center;
+}
+
+.livreb {
+    background: gray;
+    text-align: center;
+    margin-left: 90px;
+    color: black;
+    border-radius: 10px;
+    
+}
+   
