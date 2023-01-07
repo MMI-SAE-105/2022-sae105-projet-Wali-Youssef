@@ -48,7 +48,7 @@ a {
     position: relative;
 }
 
-.livre {
+.carre {
      background-color: #423F3F;
     color: #000;
     width: 80%;
@@ -71,14 +71,14 @@ a {
 
     
 }
-.livree {
+.titre {
 
 text-align: center;
 color: aliceblue;
 font-family: 'East Sea Dokdo', cursive;
 }
 
-.livreb {
+.boutons {
     background: gray;
     text-align: center;
     margin-left: 85px;
@@ -87,3 +87,6 @@ font-family: 'East Sea Dokdo', cursive;
     
 }
    
+.explic {
+    text-align: center;
+}
