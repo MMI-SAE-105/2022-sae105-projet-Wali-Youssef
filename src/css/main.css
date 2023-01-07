@@ -49,9 +49,17 @@ a {
     position: relative;
 }
 
-.livre { 
+.livre {
+    background: whitesmoke;
+    color: #000;
+    width: 80%;
+    margin: 20px;
+    padding: 10px ;
+    border-radius: 10px;
     position: relative;
-    left: 50%;
-    top: 50%;
 }
 
+.imgacceuil1 {
+    position: relative;
+    top: ;
+}
