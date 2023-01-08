@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(123, 75, 84);
+    background-color: rgb(120, 74, 83);
     color: aliceblue;
     margin: 0;
     font-family: 'UnifrakturCook'; 
@@ -49,7 +49,7 @@ a {
 }
 
 .carre {
-     background-color: #423F3F;
+     background-color:gray;
     color: #000;
     width: 80%;
     margin: 20px;
