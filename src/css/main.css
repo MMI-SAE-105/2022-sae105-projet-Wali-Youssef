@@ -103,3 +103,12 @@ font-family: 'East Sea Dokdo', cursive;
     font-size: 13px;
     margin: 10px;
 }
+
+.bar
+{ 
+
+    height:3px;
+    width:100%;
+    background-color:black;
+    padding:    0;
+}
