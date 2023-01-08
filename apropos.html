@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="/src/style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+    <link rel="preconnect " href="https://fonts.googleapis.com"> <link rel="preconnect "href="https://fonts.gstatic.com "» crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Dancing+Script&swap "rel="stylesheet">
+    <link rel="preconnect "href="https://fonts.googleapis.com"> <link rel="preconnect " href="https://fonts.gstatic.com" » crossorigin>
+   
+    <!-- Menu  -->
+   <style>
+       .list-unstyled {
+        list-style: none;
+       }
         .menu {
+
+            font-size: 22px;
             position: fixed;
             top: 0;
             left: 0;
@@ -34,48 +46,53 @@
 <body>
     <header>
         <a href="./index.html">
-            <img class="menu-accueil" src="/public/icon/image-removebg-preview 2.webp" alt="#">
+            <img class="logo" src="/public/icon/image-removebg-preview 2.webp" alt="logo site">
         </a>
+        
+        <h1 class="Laguerre">LA guerre</h1>
         <button @click="menuIsOpen = ! menuIsOpen">
-            <img aria-controls="mainNav"  class="header_menu" src="./public/icon/menu .webp" alt="#">
+            <img aria-controls="mainNav"  class="header_menu" src="./public/icon/menu.jpg.webp" alt="btn menu">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
 
             <button @click="menuIsOpen = ! menuIsOpen">
-                <img src="/public/icon/marque-de-croix-removebg-preview 1.webp" alt="#">
+                <img class="croix" src="/public/icon/marque-de-croix-removebg-preview 1.webp" alt="#">
             </button>
 
 
         
-            <h2>Menu</h2>
-            <ul>
+                <h2>Menu</h2>
+                <ul style="list-style-type:none;">
                 <li><a href="/musique.html">la résistance francaise</a></li>
                 <li><a href="/livre.html">La Chronologie de la guerre </a></li>
                 <li><a href="/lieu.html">La guerre en Europe</a></li>
                 <li><a href="/film.html">L'opération qui a donné la victoire </a></li>
                 <li><a href="/espoir.html">Un grand Espoirs de ce monde</a></li>
                 <li><a href="/regret.html">La guerre, sa ne devrai pas exister </a></li>
-                <li><a href="/autreprojet.html">Autres Projets</a></li>
             </ul>
             <ul>
-                <li><a href="/glossaire.html">Glossaire</a></li>
-                <li><a href="/apropos.html">À propos</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-            
+                <ul style="list-style-type:none;">
+
+        
                   <li><a href="#"><img src="data:image/png;base64,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" alt="#"></a></li>
                   <li><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADoklEQVR4nO2bTY/bRBjHf7bTZAthVwtaiSLeDhUgemu1Kv0GiBchTnBAfIM90AMfoFWlnnrhK3BAKgculUBqoRKiCFQh9VBVSHuhgLpitdnEcdaescfDIXU22ST7Ejt5Niv/pJHGM/az//l7Mp6ZtWGXj4C7QADYpylj3PG8pQD4CfiQPVwfdcHFNWsvrtmxx3OergE4dO/8d45b5ZVLV3nhzc+oPvvSXoMOzW9fOQCE2h5w5tE4Xe3G/e/jyxPH2IgCbj5+xPVH94hTA/BBBfgC4OV3rnDm/JcFSD2+vLhQZ+2NVQCuPvwZ4LILXABYeetzOWUz5pNX386yqxWgDuDVlmg/+YV4ZwObJrn/SBjFuWOMIrr3YPKLPQ93qc7K62eykufcLNd8/AM6+Cd348+++w0NX+eKMTWMIW200A/We0U9A6w5pqKngDW7N9nd57yJWP/+U55frBYddmoUbsC8URogLUCa0gBpAdKUBkgLkKY0QFqANKUB0gKkKQ2QFiBNaUAvZ4vdxDzO2L629gxIjRIRI0Godtu6a0CyIyJGgp0w7OX7tsQU1ubfDD3u6CRG6RE9AMDo9swFzRo/CAaOBwywSXSiN0eV1ig1ONYNPQaNap7IJ4K1lm2/NVQ+ZIC1BqOGT5x3tv0Wxpih8pETodSEpHEwqmouaXcCwigaWTd2Jmh0mzTuTE3UrOiE4dDA109lv4uN9gGLe6petK6Z4HcC2vs0Hg4wALo9wZoEr7YEjlOYuGmSDXjjun0/BxoA3THBhhq3toTr1XILnCZKa5p+i2TEgDeKQxkAT58OUQPr1fCqi+Ae+tKZECcJftAmUkdb0xy5FalRpOEmrlfDrZyGygIOMj8Nay2hUuyE4cD09ihMfBtTo7orSO3guFUcr4rjnuoTV9yQ0T8vi1REnCQordFxPLC0nYT8/dja7kJqz3J6uzmdydRWs1lovHJHSFqANKUB0gKkKQ2QFiBNaYC0AGlKA6QFSFMaIC1AmtIAaQHSlAZIC5BmbgxY/2uTXzlXeNy+N0QOt4t6Ekj79up6Bqjgb9I4wJKKiDqIs6+tcImHuWJYx0FXPfzFhV5Zhe7npHWjWoV8LZbRak3njZPG8jO5Y2ylvVcAWi5wHyBs/pk78Lzwo97Ksvdd4AZAZ+N3Opt/nIh/iI6jkcZ8Gz3h6/DfrOhGlrmG/MfMhadby6v21vLquPorew16H7gD+NLCC0wZ2bEP3Abeyyr+B0+sOhnoqvluAAAAAElFTkSuQmCC" alt="#"></a></li>
 
+                  
         </nav>
-    </header>
-    </head>
+    
+
+</header>
+</head>
+<div class="bar"></div>
+
+
 
 
 
 
 </body>
 
-<h1>A PROPOS</h1>
+<h3 class="soustitre">A PROPOS</h3>
 
 <p>“projet réalisé dans le cadre d’un exercice
 pédagogique au département MMi de Montbéliard“
@@ -83,21 +100,37 @@ pédagogique au département MMi de Montbéliard“
 J’ai décider de travaillé sur la guerre car c’est important et j’ai aussi travaillé pour rendre hommages aux victmes de
 la guerre .</p>
 
-<img src="/public/img/a propos/image26.webp" alt="">
+<img class ="imgacceuil1" src="/public/img/a propos/image26.webp" alt="">
+
+
+<!-- Footer  -->
 <footer>
-    <p>Wali Youssef - MMI 1 - C2</p>
-    <p>Mon mail personel : </p>
-    <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSBmlwHvCNcpmhfwGFGbvMdChQDfCkjqlLCqNGsztjrKLhSdLsJZhPGbbNptnjpQZddhsXWT"
-        target="_blank">
-        youyouwalicm@gmail.com</a>
-    <p>“projet réalisé dans le cadre d’un exercice
-        pédagogique au
-        <a href="http://mmimontbeliard.com/" target="_blank">département MMi de Montbéliard</a>"
-    </p>
+    <div class="barre"></div>
+    <h4 class="p__footer">&copy; Wali Youssef - C2</h4>
+    
+    
+    
+    
+    <Ul<ul style="list-style-type:none;"></ul>
+    <li><a class="p__footer" href="/apropos.html">A propos</a></li>
+    <li><a class="p__footer " href="autreprojet.html">Autres Projets</a></li>
+    <li><a class="p__footer "href="glossaire.html">Glossaire</a></li>
+    <li><a class="p__footer "  href="contact.html">Formulaire de Contact</a></li>
+    <li><a class="p__mail "href="mailto:youyouwalicm@gmail.com">Contact Mail</a></li>
+  </Ul>
+    <p class="p__footer">
+Projet réalisé dans le cadre d'un exercice pédagogique au département
+      <a class="p__footer " href="http://mmimontbeliard.com">MMI de Montbéliard</a >
+      </p>
+      
+      <IMG
+     class="icon__mmi"
+      src= "/public/icon/LOGO_MMI.svg"
+      alt="logo du dpt MMI de Montbéliard">
 
     <p>Université Nord Franche-Comté</p>
 </footer>
-
 </body>
 
 </html>
+
