@@ -129,8 +129,8 @@ figure {
 figcaption {
     background-color: #222;
     color: #fff;
-    font: 'Montserrat', sans-serif;
+    font: italic smaller sans-serif;
     padding: 3px;
     text-align: center;
-   
+    border-radius: 10px;
 }
