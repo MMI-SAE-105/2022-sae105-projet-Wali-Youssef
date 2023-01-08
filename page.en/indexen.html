@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="En" x-data="{ menuIsOpen:false }">
+<html lang="en" x-data="{ menuIsOpen:false }">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE WAR</title>
+    <title>La guerre</title>
     <link rel="stylesheet" href="/src/style.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
@@ -40,11 +40,11 @@
 
 <body>
     <header>
-        <a href="./acceuilen.html">
+        <a href="./index.html">
             <img class="logo" src="/public/icon/image-removebg-preview 2.webp" alt="logo site">
         </a>
         
-        <h1 class="Laguerre">  THE WAR</h1>
+        <h1 class="Laguerre">THE WAR </h1>
         <button @click="menuIsOpen = ! menuIsOpen">
             <img aria-controls="mainNav"  class="header_menu" src="./public/icon/menu.jpg.webp" alt="btn menu">
         </button>
@@ -58,12 +58,12 @@
         
                 <h2>Menu</h2>
                 <ul style="list-style-type:none;">
-                <li><a href="/musiqueen.html">The french resistance</a></li>
-                <li><a href="/livreen.html">The timeline of the war  </a></li>
-                <li><a href="/lieuen.html">The war in Europe</a></li>
-                <li><a href="/filmen.html">The operation that gave the victory  </a></li>
-                <li><a href="/espoiren.html">A great hope of this world </a></li>
-                <li><a href="/regreten.html">War shouldn't exist  </a></li>
+                <li><a href="/musique.html">The french resistance</a></li>
+                <li><a href="/livre.html">The timeline of the war  </a></li>
+                <li><a href="/lieu.html">The war in Europe</a></li>
+                <li><a href="/film.html">The operation that gave the victory  </a></li>
+                <li><a href="/espoir.html">A great hope of this world </a></li>
+                <li><a href="/regret.html">War shouldn't exist  </a></li>
             </ul>
             <ul>
                 <ul style="list-style-type:none;">
@@ -81,21 +81,79 @@
 </header>
 </head>
 
-
-
-
 </body>
+        <img class="guerre1" src="./public/img/page-d-accueil/photo guerre.webp" alt="photo de la guerre">
+        <img src="./public/img/page-d-accueil/date.webp" alt="image de la date de la guerre">
 
-<h3 class="soustitre"> ABOUT </h3>
+        <h2>INTRODUCTION</h2>
+        <p class="intro">Wars, significant moments in world history, joyful moments but often sad, dead, hurt, grieving families and destroyed cities and countries.
+            though for all those who have experienced war and we hope that there will never be war again , we
+                  let us hope for a world of peace and bohemian . </p>
 
-<p>“Exercise project
-    educational in the MMi de Montbéliard department“
+            
+            
+<!-- Livre -->
+            <div class="carre">
+            <p class="titre">Book ( Chronology of the Second World War )  <p></p>
+        <p class="explic">  A book explaining everything that happened during the Second World War, with the dates and contents of the
+            more
+            important </p>
+           
+            <img class="imgacceuil1" src="./public/img/page-d-accueil/frise.webp" alt="frise sur la seconde guerre mondiale">
 
-    I have also worked to pay tribute to the victims of the war, and I
-    the war .</p>
+            <a class="boutons" href ="/livre.html"><button style="color: aliceblue;">More information </button></a>
+             </div>
+            
+<!-- Film -->
+      <div class="carre">
+        <p class="titre"> Film (THE RUSE) <p>
 
-<img class ="imgacceuil1" src="/public/img/a propos/image26.webp" alt="">
+        <p class="explic"> A film that is available on the operation that cost the defeat to Germany <p>
 
+            <img class="imgacceuil1" src= "/public/img/page-d-accueil/operation.webp" alt=" image de l'operation">
+
+            <a class="boutons" href="/film.html"><button style="color: aliceblue;">More information </button></a>
+        </div>
+
+<!-- Chanson -->
+        <div class="carre">
+        <p class="titre">Song ( The song of the parties) <p>    
+        <p class="explic"> The anthem of the resistance, The song to make the French hold
+            during the occupation.</p>
+            <img class="imgacceuil1" src="/public/img/page-d-accueil/resistance.webp" alt="photo de résistant de la  guerre">
+    <a class="boutons" href="/musique.html"><button  style="color: aliceblue;">More information  </button></a>
+        </div>
+
+<!-- Lieu -->
+        <div class="carre">
+        <p class="titre">Location ( Europe )  <p>
+       <p class="explic"> The Europe that was the theater of the fighting, with the battles, the deaths and the bleeds .<p>
+
+            <img class="imgacceuil1" src="/public/img/page-d-accueil/lieu.webp" alt="carte de l'europe">
+
+            <a  class="boutons" href="/lieu.html"><button  style="color: aliceblue;" >More information  </button></a>
+
+        </p>
+        </div>
+<!-- Espoir -->
+        <div class="carre">
+        <p class="titre">Hope (End of War ) </p>      
+           <p class="explic">World War II was to be the last but 4 years later and
+            Today war is still relevant .</p> 
+         <img class="imgacceuil1"src="/public/img/page-d-accueil/stopguerre.webp" alt="image pour l'arret des guerre">
+
+            <a  class="boutons" href="/espoir.html"><button  style="color: aliceblue;" >More information </button></a>
+        </p>
+        </div>
+<!-- Regret  -->
+        <div class="carre">
+        <p class="titre">Regret ( The war) </p>
+        <p class="explic"> War , its should not exist , its was created by Man is that sad .</p>
+        <img class="imgacceuil1" src="/public/img/page-d-accueil/prqguerre.webp" alt="pourquoi la guerre ">
+
+            <a  class="boutons" href="/regret.html"><button style="color: aliceblue;" >More information </button></a>
+        </p>
+        </div>
 <br>
 <br>
 <br>
@@ -110,10 +168,10 @@
             
             
             <Ul<ul style="list-style-type:none;"></ul>
-            <li><a class="p__footer" href="/aproposen.html">About</a></li>
-            <li><a class="p__footer " href="autreprojeten.html">Other projects</a></li>
-            <li><a class="p__footer "href="glossaireen.html">Glossary</a></li>
-            <li><a class="p__footer "  href="contacten.html">Contact form</a></li>
+            <li><a class="p__footer" href="/apropos.html">About</a></li>
+            <li><a class="p__footer " href="autreprojet.html">Other projects</a></li>
+            <li><a class="p__footer "href="glossaire.html">Glossary</a></li>
+            <li><a class="p__footer "  href="contact.html">Contact form</a></li>
             <li><a class="p__mail "href="mailto:youyouwalicm@gmail.com">Contact Mail</a></li>
           </Ul>
             <p class="p__footer">
