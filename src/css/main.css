@@ -99,4 +99,8 @@ font-family: 'East Sea Dokdo', cursive;
 
 }
 
-
+.texte { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin: 10px;
+}
