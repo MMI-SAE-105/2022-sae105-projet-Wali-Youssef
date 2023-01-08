@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(120, 74, 83);
+    background-color: rgb(140, 74, 83); 
     color: aliceblue;
     margin: 0;
     font-family: 'UnifrakturCook'; 
-    
+   
     }
 
 img{
@@ -78,7 +78,7 @@ font-family: 'Dancing Script', cursive;
 }
 
 .boutons {
-    background: gray;
+    background: rgb(169,169,169);
     text-align: center;
     margin-left: 85px;
     color: rgb(255, 255, 255);
